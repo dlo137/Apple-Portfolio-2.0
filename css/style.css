@@ -1,0 +1,1358 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 9rem 4rem 9rem;
+    margin-bottom: -10rem;
+    background-color: rgb(20, 20, 20);
+}
+
+/* light Theme Colors*/
+.light{
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+
+.light .flicker{
+    z-index: 1;
+    transform: translateX(40px);
+    cursor: pointer;
+}
+
+.light nav{
+    color: rgb(0, 0, 0);
+    background: rgb(240, 240, 240);
+}
+
+.light nav .active{
+    color: black;
+}
+.light .grid-layout > div {
+    background:rgb(240, 240, 240);
+    color: rgb(34, 34, 34);
+}
+
+.light .contact-box{
+    background: whitesmoke;
+    color: rgb(34, 34, 34);
+}
+
+.light .contact-box-1{
+    background: whitesmoke;
+    color: rgb(34, 34, 34);
+}
+
+
+.light header nav .tabs .tab.active a[data-switcher]{
+    background: rgb(207, 207, 207);
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+}
+
+
+/* responsive grid layout */
+
+.grid-layout{
+    display: grid;
+    padding-top: 4rem;
+    gap: 1.5rem;
+}
+
+
+
+/* sections in grid layout*/
+
+.grid-layout > div {
+    background-color: black;
+    color: lightgray;
+    border-radius: 30px;
+
+}
+
+
+
+.section1 {
+    align-items: center;
+    justify-content: center;
+    grid-area: about;
+    padding: 4rem;
+    
+
+}
+
+.section2 {
+    grid-area: map;
+
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+.section3 {
+    grid-area: github;
+
+}
+
+
+.section4{
+    grid-area: languages;
+    padding: 4rem;
+
+    
+}
+
+.section5 {
+    grid-area: skills;
+    padding: 4rem;
+
+}
+
+.section6 {
+    grid-area: sneakerProj;
+
+}
+
+.section7 {
+    grid-area: musicPlayer;
+
+}
+
+.section8 {
+    grid-area: admin;
+
+}
+
+.section9 {
+    grid-area: website;
+
+}
+
+.section10 {
+    grid-area: crypto1;
+
+} 
+
+.section11 {
+    grid-area: crypto2;
+
+} 
+
+
+
+/* About-Me Section */
+
+.avatar{
+    display: block;
+    margin-top: -2rem;
+    height: 15rem;
+}
+
+.about-me h2{
+    font-size: 28px;
+}
+
+.about-me h1{
+    font-family: 'SF-Pro-Bold', sans-serif;
+    font-size: 48px;
+    background: -webkit-linear-gradient(right, #ff7857, #ffcc72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-me p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.about-me_buttons{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.gradient{
+    font-family: 'SF-Pro-Bold-Italic', sans-serif;
+    background: -webkit-linear-gradient(right,  #ff7857, #ffcc72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+/* media query for phones, tablets, computers, */
+
+/* Laptops*/
+@media (min-width: 1375px) {
+    .grid-layout{
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: repeat(5, 17%) ;
+
+        grid-template-areas: 
+        'about about map map'
+        'about about github languages'
+        'skills sneakerProj sneakerProj languages'
+        'skills musicPlayer admin admin'
+        'website website crypto1 crypto2';
+
+    }   
+}
+
+
+/* about-me responsiviness */
+/* small laptops - regular laptops */
+@media only screen and (min-width: 1055px) and (max-width: 1530px) {
+
+    .about-me h2{
+        font-size: 22px;
+    }
+
+    .about-me h1{
+        font-size: 38px;
+    }
+    .about-me p{
+        font-size: 18px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+}
+
+
+/* small tablets - phones */
+@media only screen and (min-width: 931px) and (max-width: 1374px) {
+    .grid-layout{
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: repeat(6, 10%) ;
+
+        grid-template-areas: 
+        'about about github '
+        'about about languages '
+        'map map languages'
+        'skills sneakerProj sneakerProj '
+        'skills admin admin'
+        ' website website musicPlayer'
+        'crypto1 crypto2 crypto2';
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 9rem 4rem 9rem;
+        margin-bottom: 25rem;
+    }
+
+    .avatar-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .avatar{
+        height: 13rem;
+        }
+
+    .about-me h2{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .about-me h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .about-me p{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .about-me_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #text{
+        font-size: 1.2rem;
+    }
+
+    #contact-button-bg-1{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to right, #ff7857, #ffcc72);
+        padding: .3rem;
+        border-radius: 30px;
+        width: 7rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+    
+    #contact-box-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        background: rgb(34, 34, 34);
+        color: white;   
+        border-radius: 30px;
+        width: 7rem;
+        height: 2rem;
+    }
+
+    #section4 h2{
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        margin-bottom: .5rem;
+    }
+
+    .skills_languages_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        gap: 1rem;
+        border-bottom: gray solid 1px;;
+        width: auto;
+        height: 4rem;
+    }
+
+    #logos{
+        height: 25px;
+        width: 25px;
+    }
+
+    #section5 h2{
+        font-size: 24px;
+        padding-bottom: 2rem;
+        }
+
+    #section4 h2 {
+        font-size: 24px;
+        margin-top: 4rem;
+    }
+
+    #section4, #section5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #learning-blocks{
+        height: 4rem;
+        width: auto;
+    }
+
+   
+    .html-css-text{
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 725px) and (max-width: 930px) {
+
+    .grid-layout{
+        justify-content: center;
+        grid-template-columns: repeat(2, 60%);
+        grid-template-rows: repeat(10, 7%) ;
+
+        grid-template-areas: 
+        'about about'
+        'about about'
+        'map map'
+        'skills languages '
+        'skills languages '
+        'github crypto1'
+        'sneakerProj sneakerProj'
+        'admin admin'
+        'website website'
+        'crypto2 musicPlayer';
+    }
+
+    body{
+        width: 69%;
+    }
+    .avatar-container{
+        display: flex;
+        justify-content: center;
+    }
+    .avatar{
+        margin-top: rem;
+        height: 12rem;
+
+    }
+    .about-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-me h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .about-me p{
+        font-size: 16px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-me_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #text{
+        font-size: 1.2rem;
+    }
+
+    #contact-button-bg-1{
+        display: none;
+        justify-content: center;
+        background: linear-gradient(to right, #ff7857, #ffcc72);
+        padding: .3rem;
+        border-radius: 30px;
+        width: 7rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+    
+    #contact-box-1{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        background: white;
+        border-radius: 30px;
+        width: 7rem;
+        height: 2rem;
+        color: black;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    }
+    .tab.active > a[data-switcher]{
+        background: white;
+        border-radius: 30px;
+        padding: 0.2rem 1rem;
+            background: rgb(34, 34, 34);
+        color: white;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 2rem;
+        width: 20rem;
+        color: white;
+        background: rgb(0, 0, 0);
+        padding: 0.3rem ;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
+
+    #switch{
+        width: 85px;
+        height: 39px;
+        background: rgb(226, 226, 226);
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    #flicker{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 
+            inset 4px 4px 4px rgb(255, 255, 255),
+            inset -4px -4px 4px rgb(195 193 198 / 90%);
+    }
+    
+    .light .flicker{
+        z-index: 1;
+        transform: translateX(40px);
+        cursor: pointer;
+    }
+    
+    #moon{
+        width: 23px;
+        height: 23px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
+        position: absolute;
+        top: 5px;
+        left: 48px;
+    }
+
+    #section5 h2{
+        font-size: 24px;
+        padding-bottom: 2rem;
+        }
+
+    #section4 h2 {
+        font-size: 24px;
+        margin-top: 4rem;
+    }
+
+    #section4, #section5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #learning-blocks{
+        height: 4rem;
+        width: auto;
+    }
+
+    #skills{
+        width: auto;
+        height: 4.5rem;
+    }
+   
+    .html-css-text{
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (min-width: 585px) and (max-width: 724px) {
+
+    .grid-layout{
+        justify-content: center;
+        grid-template-columns: repeat(2, 60%);
+        grid-template-rows: repeat(10, 10%) ;
+
+        grid-template-areas: 
+        'about about'
+        'about about'
+        'map map'
+        'skills languages '
+        'skills languages '
+        'github crypto1'
+        'sneakerProj sneakerProj'
+        'admin admin'
+        'website website'
+        'crypto2 musicPlayer';
+    }
+
+    body{
+        width: 60%;
+    }
+
+
+    .avatar-container{
+        display: flex;
+        justify-content: center;
+    }
+    .avatar{
+        margin-top: 1rem;
+        height: 10rem;
+
+    }
+    .about-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-me h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .about-me p{
+        font-size: 14px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-me_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #text{
+        font-size: 1.2rem;
+    }
+
+    #contact-button-bg-1{
+        display: none;
+        justify-content: center;
+        background: linear-gradient(to right, #ff7857, #ffcc72);
+        padding: .3rem;
+        border-radius: 30px;
+        width: 6rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    
+    #contact-box-1{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        background: white;
+        border-radius: 30px;
+        width: 6rem;
+        height: 1.5rem;
+        color: black;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .tab.active > a[data-switcher]{
+        background: white;
+        border-radius: 30px;
+        padding: 0.2rem 1rem;
+            background: rgb(34, 34, 34);
+        color: white;
+    }
+    
+    #nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 1.6rem;
+        width: 16rem;
+        color: white;
+        background: rgb(0, 0, 0);
+        padding: 0.3rem ;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+
+
+    #switch{
+        display: flex;
+        width: 50px;
+        height: 32px;
+        background: rgb(226, 226, 226);
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    #flicker{
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 
+            inset 4px 4px 4px rgb(255, 255, 255),
+            inset -4px -4px 4px rgb(195 193 198 / 90%);
+    }
+    
+    .light .flicker{
+        z-index: 1;
+        transform: translateX(40px);
+        cursor: pointer;
+    }
+    
+    #moon{
+        display: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
+        position: absolute;
+        top: 3px;
+        left: 48px;
+    }
+
+    #section5 h2{
+        font-size: 24px;
+        padding-bottom: 2rem;
+        }
+
+    #section4 h2 {
+        font-size: 24px;
+        margin-top: 4rem;
+    }
+
+    #section4, #section5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #learning-blocks{
+        height: 4rem;
+        width: auto;
+    }
+
+   
+    .html-css-text{
+        font-size: 12px;
+    }
+
+    
+    
+}
+
+@media only screen and (min-width: 500px) and (max-width: 584px) {
+
+    .grid-layout{
+        grid-template-columns: repeat(2, 60%);
+        grid-template-rows: repeat(10, 9%) ;
+
+        grid-template-areas: 
+        'about about'
+        'about about'
+        'map map'
+        'skills languages '
+        'skills languages '
+        'github crypto1'
+        'sneakerProj sneakerProj'
+        'admin admin'
+        'website website'
+        'crypto2 musicPlayer';
+    }
+
+    body{
+        width: 60%;
+    }
+
+
+    .avatar-container{
+        display: flex;
+        justify-content: center;
+    }
+    .avatar{
+        margin-top: 1rem;
+        height: 7rem;
+
+    }
+    .about-me h2{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-me h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .about-me p{
+        font-size: 12px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-me_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #text{
+        font-size: 1.2rem;
+    }
+
+    #contact-button-bg-1{
+        display: none;
+        justify-content: center;
+        background: linear-gradient(to right, #ff7857, #ffcc72);
+        padding: .3rem;
+        border-radius: 30px;
+        width: 6rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    
+    #contact-box-1{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        background: white;
+        border-radius: 30px;
+        width: 6rem;
+        height: 1.5rem;
+        color: black;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .tab.active > a[data-switcher]{
+    background: white;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+        background: rgb(34, 34, 34);
+    color: white;
+    }
+
+    #nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+    width: 20rem;
+    color: white;
+    background: rgb(0, 0, 0);
+    padding: 0.3rem ;
+    border-radius: 30px;
+    font-size: 20px;
+    }
+
+
+    #switch{
+        display: none;
+        width: 50px;
+        height: 32px;
+        background: rgb(226, 226, 226);
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    #flicker{
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 
+            inset 4px 4px 4px rgb(255, 255, 255),
+            inset -4px -4px 4px rgb(195 193 198 / 90%);
+    }
+    
+    .light .flicker{
+        z-index: 1;
+        transform: translateX(10px);
+        cursor: pointer;
+    }
+    
+    #moon{
+        display: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
+        position: absolute;
+        top: 3px;
+        left: 48px;
+    }
+    
+
+    #section5 h2{
+        font-size: 24px;
+        padding-bottom: 2rem;
+        }
+
+    #section4 h2 {
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+
+    #section4, #section5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #learning-blocks{
+        height: 4rem;
+        width: auto;
+    }
+
+    #skills{
+        width: auto;
+        height: 5rem;
+    }
+
+   
+    .html-css-text{
+        font-size: 12px;
+    }
+
+}
+    
+
+@media only screen and (min-width: 0px) and (max-width: 499px) {
+
+    .grid-layout{
+        justify-content: center;
+        grid-template-columns: repeat(2, 100%);
+        grid-template-rows: repeat(10, 13%) ;
+
+        grid-template-areas: 
+        'about about'
+        'about about'
+        'map map'
+        'skills languages '
+        'skills languages '
+        'github crypto1'
+        'sneakerProj sneakerProj'
+        'admin admin'
+        'website website'
+        'crypto2 musicPlayer';
+    }
+
+
+    body{
+
+        width: 42%;
+    }
+
+    
+
+    .avatar-container{
+        display: flex;
+        justify-content: center;
+    }
+    .avatar{
+        margin-top: -2rem;
+        height: 12rem;
+
+    }
+    .about-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-me h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .about-me p{
+        display: block;
+        margin-top: 1rem;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .about-me_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #text{
+        font-size: 18px;
+    }
+
+    #contact-button-bg{
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to right, #ff7857, #ffcc72);
+        padding: .3rem;
+        border-radius: 30px;
+        width: 5rem;
+        height: 1.6rem;
+        cursor: pointer;
+    }
+    
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: white;
+        background: rgb(0, 0, 0);
+        border-radius: 30px;
+        width: 5rem;
+        height: 1.6rem;
+    }
+
+    
+    #contact-box-1{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        background: white;
+        border-radius: 30px;
+        width: 6rem;
+        height: 2rem;
+        color: black;
+    }
+    #contact-button-bg-1{
+        display: none;
+        justify-content: center;
+        background: linear-gradient(to right, #ff7857, #ffcc72);
+        padding: .3rem;
+        border-radius: 30px;
+        width: 6rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab.active > a[data-switcher]{
+        background: white;
+        border-radius: 30px;
+        padding: 0.2rem 1rem;
+            background: rgb(34, 34, 34);
+        color: white;
+    }
+    
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 2rem;
+        width: 20rem;
+        color: white;
+        background: rgb(0, 0, 0);
+        padding: 0.3rem ;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
+
+    #switch{
+        display: none;
+        width: 85px;
+        height: 39px;
+        background: rgb(226, 226, 226);
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    #flicker{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 
+            inset 4px 4px 4px rgb(255, 255, 255),
+            inset -4px -4px 4px rgb(195 193 198 / 90%);
+    }
+    
+    .light .flicker{
+        z-index: 1;
+        transform: translateX(40px);
+        cursor: pointer;
+    }
+    
+    #moon{
+        width: 23px;
+        height: 23px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
+        position: absolute;
+        top: 5px;
+        left: 48px;
+    }
+
+    #section5 h2{
+        font-size: 24px;
+        margin-top: -2rem;
+
+    }
+
+    #section4 h2 {
+        font-size: 24px;
+        margin-top: -4rem;
+    }
+
+    #section4, #section5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .learning-blocks-container{
+        margin-top: 2rem;
+    }
+    .completed{
+        margin-top: 1rem;
+    }
+   
+    .html-css-text{
+        font-size: 14px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+/*Header - Center Navs*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab > a[data-switcher]{
+    cursor: pointer;
+}
+
+.tab.active > a[data-switcher]{
+    background: white;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+        background: rgb(34, 34, 34);
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+    width: 20rem;
+    color: white;
+    background: rgb(0, 0, 0);
+    padding: 0.3rem ;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    border-radius: 30px;
+    padding: 0.2rem 1rem;  
+}
+
+/*Header - light and Light Button*/
+
+.switch{
+    width: 80px;
+    height: 40px;
+    background: rgb(226, 226, 226);
+    border-radius: 30px;
+    position: relative;
+}
+
+.flicker{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+
+.moon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+/*Header - Contact Button!*/
+
+.contact-button-bg{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ff7857, #ffcc72);
+    padding: .3rem;
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(34, 34, 34);
+    color: white;    
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+} 
+
+.contact-box:hover{
+    background: rgb(65, 65, 65);
+    color: white;
+    transition: 0.3s;
+
+}
+
+
+.contact-button-bg-1{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ff7857, #ffcc72);
+    padding: .3rem;
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+.contact-box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(34, 34, 34);
+    color: white;    
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+} 
+
+/*languages section*/
+.section4 h2{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: .5rem;
+}
+
+.logos{
+    display: block;
+}
+
+
+#last-child{
+    border-bottom: none;
+}
+
+
+
+/*eduction section*/
+
+.section5 h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: .5rem;
+}
+
+
+.skills{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 1rem;
+    border-bottom: gray solid 1px;
+    width: auto;
+    height: 5.5rem;
+}
+
+.learning-blocks{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 1rem;
+    border-bottom: gray solid 1px;
+    width: auto;
+    height: 5.5rem;
+}
+
+.completed{
+    font-size: 12px;
+    color: gray;
+    margin-top: 1rem;
+}
+
+/* Images*/
+
