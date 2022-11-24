@@ -55,6 +55,16 @@ body{
     padding: 0.2rem 1rem;
 }
 
+/* pages */
+.pages  .page{
+    display: none;
+}
+
+.pages .page.active{
+    display: grid;
+}
+
+
 
 /* responsive grid layout */
 
@@ -64,9 +74,18 @@ body{
     gap: 1.5rem;
 }
 
+.grid-layout2{
+    display: grid;
+    padding-top: 4rem;
+    gap: 1.5rem;
+}
 
 
-/* sections in grid layout*/
+
+
+
+
+/*page 1 - sections in grid-layout*/
 
 .grid-layout > div {
     background-color: black;
@@ -77,19 +96,23 @@ body{
 
 
 
+
 .section1 {
+    display: flex;
     align-items: center;
     justify-content: center;
     grid-area: about;
     padding: 4rem;
-    
-
 }
+
+
 
 .section2 {
     grid-area: map;
 
 }
+
+
 
 .img{
     width: 100%;
@@ -139,7 +162,7 @@ body{
 }
 
 .section10 {
-    grid-area: crypto1;
+    grid-area: crypto;
 
 } 
 
@@ -147,6 +170,28 @@ body{
     grid-area: crypto2;
 
 } 
+
+/* page 2 - grid-layout sections*/
+
+.crypto{
+    grid-area: cryptoTracker;
+}
+
+.sneakers{
+    grid-area: shoes;
+}
+
+.musicPlayer{
+    grid-area: musicPlayer;
+}
+
+.admin{
+    grid-area: admin;
+}
+
+.tasty{
+    grid-area: tasty;
+}
 
 
 
@@ -158,11 +203,11 @@ body{
     height: 15rem;
 }
 
-.about-me h2{
+.about-me-section h2{
     font-size: 28px;
 }
 
-.about-me h1{
+.about-me-section h1{
     font-family: 'SF-Pro-Bold', sans-serif;
     font-size: 48px;
     background: -webkit-linear-gradient(right, #ff7857, #ffcc72);
@@ -170,7 +215,7 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-.about-me p{
+.about-me-section p{
     font-size: 20px;
     margin-bottom: 2rem;
     font-weight: bold;
@@ -196,21 +241,48 @@ body{
 
 /* media query for phones, tablets, computers, */
 
-/* Laptops*/
-@media (min-width: 1375px) {
-    .grid-layout{
-        grid-template-columns: repeat(4, 24%);
-        grid-template-rows: repeat(5, 17%) ;
 
-        grid-template-areas: 
-        'about about map map'
-        'about about github languages'
-        'skills sneakerProj sneakerProj languages'
-        'skills musicPlayer admin admin'
-        'website website crypto1 crypto2';
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: repeat(5, 17%) ;
 
-    }   
+    grid-template-areas: 
+    'about about map map'
+    'about about github languages'
+    'skills sneakerProj sneakerProj languages'
+    'skills musicPlayer admin admin'
+    'website website crypto crypto2';
 }
+
+.grid-layout-projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    padding: 4rem 0rem;
+    gap: 1.5rem;
+
+
+    grid-template-areas: 
+    'cryptoTracker shoes shoes musicPlayer'
+    'admin admin tasty tasty'
+    ;
+}
+
+.resume-layout{
+    display: flex;
+    padding: 4rem;
+    margin-top: 4rem;
+    height: 100%;
+    font-size: 32px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: lightgray;
+    border-radius: 30px;
+}
+
+
+
 
 
 /* about-me responsiviness */
@@ -230,6 +302,8 @@ body{
         font-weight: bold;
     }
 
+
+
 }
 
 
@@ -246,7 +320,7 @@ body{
         'skills sneakerProj sneakerProj '
         'skills admin admin'
         ' website website musicPlayer'
-        'crypto1 crypto2 crypto2';
+        'crypto crypto2 crypto2';
     }
 
     body{
@@ -389,7 +463,7 @@ body{
         'map map'
         'skills languages '
         'skills languages '
-        'github crypto1'
+        'github crypto'
         'sneakerProj sneakerProj'
         'admin admin'
         'website website'
@@ -759,7 +833,7 @@ body{
         'map map'
         'skills languages '
         'skills languages '
-        'github crypto1'
+        'github crypto'
         'sneakerProj sneakerProj'
         'admin admin'
         'website website'
@@ -941,9 +1015,10 @@ body{
 @media only screen and (min-width: 0px) and (max-width: 499px) {
 
     .grid-layout{
+        display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2, 100%);
-        grid-template-rows: repeat(10, 13%) ;
+        grid-template-columns: repeat(2, 56%);
+        grid-template-rows: repeat(10, 16%) ;
 
         grid-template-areas: 
         'about about'
@@ -951,17 +1026,36 @@ body{
         'map map'
         'skills languages '
         'skills languages '
-        'github crypto1'
+        'github musicPlayer'
         'sneakerProj sneakerProj'
         'admin admin'
         'website website'
-        'crypto2 musicPlayer';
+        'crypto2 crypto';
     }
 
+    .grid-layout-projects{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 38% 38% 38% 34% 34%;
+        gap: 1.5rem;
+
+        grid-template-areas: 
+        'shoes shoes'
+        'admin admin'
+        'tasty tasty'
+        'cryptoTracker musicPlayer';
+    
+
+    }
+
+    .resume-layout{
+
+    }
+    
 
     body{
-
-        width: 42%;
+        width: 160%;
     }
 
     
@@ -972,22 +1066,22 @@ body{
     }
     .avatar{
         margin-top: -2rem;
-        height: 12rem;
+        height: 24rem;
 
     }
-    .about-me h2{
-        font-size: 20px;
+    .about-me-section h2{
+        font-size: 44px;
         text-align: center;
     }
 
-    .about-me h1{
-        font-size: 22px;
+    .about-me-section h1{
+        font-size:62px;
         text-align: center;
     }
-    .about-me p{
+    .about-me-section p{
         display: block;
         margin-top: 1rem;
-        font-size: 18px;
+        font-size: 38px;
         margin-bottom: 1rem;
         font-weight: bold;
         text-align: center;
@@ -1000,7 +1094,7 @@ body{
 
 
     #text{
-        font-size: 18px;
+        font-size: 42px;
     }
 
     #contact-button-bg{
@@ -1009,9 +1103,9 @@ body{
         justify-content: center;
         background: linear-gradient(to right, #ff7857, #ffcc72);
         padding: .3rem;
-        border-radius: 30px;
-        width: 5rem;
-        height: 1.6rem;
+        border-radius: 100px;
+        width: 12rem;
+        height: 5rem;
         cursor: pointer;
     }
     
@@ -1022,9 +1116,9 @@ body{
         font-size: 22px;
         color: white;
         background: rgb(0, 0, 0);
-        border-radius: 30px;
-        width: 5rem;
-        height: 1.6rem;
+        border-radius: 100px;
+        width: 12rem;
+        height: 5rem;
     }
 
     
@@ -1060,27 +1154,32 @@ body{
         background: white;
         border-radius: 30px;
         padding: 0.2rem 1rem;
-            background: rgb(34, 34, 34);
+        background: rgb(34, 34, 34);
         color: white;
     }
+
+    .tab.active{
+        background: rgb(34, 34, 34);;
+    }
+
     
     .nav-container{
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 120%;
     }
 
-    nav{
+    #nav{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        height: 2rem;
-        width: 20rem;
+        height: 4rem;
+        width: 38rem;
         color: white;
         background: rgb(0, 0, 0);
         padding: 0.3rem ;
-        border-radius: 30px;
-        font-size: 20px;
+        border-radius: 100px;
+        font-size: 42px;
     }
 
 
@@ -1125,23 +1224,44 @@ body{
     }
 
     #section5 h2{
-        font-size: 24px;
-        margin-top: -2rem;
+        font-size: 38px;
+        margin-top: 2rem;
 
     }
 
     #section4 h2 {
-        font-size: 24px;
-        margin-top: -4rem;
+        font-size: 38px;
+        margin-top: 2rem;
     }
 
     #section4, #section5{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 
     }
+
+    .section1{
+        display: block;
+        padding-top: 7rem;
+        
+    }
+
+    #skills{
+        flex: 1;
+        padding-top: 5rem;
+        height: 10rem;
+        font-size: 26px;
+    }
+
+    #learning-blocks{
+        flex: 1;
+        padding-top: 5rem;
+        height: 10rem;
+        font-size: 26px;
+    }
+
+  
 
     .learning-blocks-container{
         margin-top: 2rem;
@@ -1151,9 +1271,12 @@ body{
     }
    
     .html-css-text{
-        font-size: 14px;
+        font-size: 26px;
     }
 
+    #completed{
+        font-size: 20px;
+    }
     
 }
 
@@ -1236,7 +1359,6 @@ li{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
     position: absolute;
     top: 5px;
     left: 45px;
@@ -1354,5 +1476,111 @@ li{
     margin-top: 1rem;
 }
 
-/* Images*/
+/* second page*/
+
+.word-img{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.resume-layout{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5rem 7rem;
+}
+
+.intro{
+    font-size: 26px;
+}
+
+.resume-body{
+    display: block;
+    text-align: left;
+}
+
+.technical-skills-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.technical-skills-section > h3{
+    border-bottom: solid gray 1px;
+}
+
+.technical-skills-section > p{
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+.software-projects-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.software-projects-section > h3 {
+    border-bottom: solid gray 1px;
+}
+
+.experience-section> h3 {
+    border-bottom: solid gray 1px;
+}
+
+.development-section> h3 {
+    border-bottom: solid gray 1px;
+    margin-top: 1.5rem;
+
+}
+
+.development-section > p {
+    margin-top: 2rem;
+    font-size: 24px;
+}
+
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    font-size: 24px;
+}
+
+.bullet-points{
+    display: block;
+    text-align: left;
+    margin-top: .2rem;
+    font-size: 20px;
+    color: white;
+}
+
+.title h4{
+    margin-top: 2rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right{
+    text-align: right;
+}
+
+.resume-header > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.intro{
+    margin-top: 1rem;
+}
+
 

@@ -19,13 +19,13 @@ switchElement.addEventListener('click', () =>{
     toggle = !toggle;
     if(toggle){
         mapImg.src = './assests/imgs/map_light.png';
-        githubImg.src = './assests/imgs/imgs/github_white.png';
-        linkedImg.src = './assets/imgs/linkedin_white.png';
+        githubImg.src = './assests/imgs/github_white.png';
+        linkedImg.src = './assets/imgs/linkedin.png';
         gitImg.src = './assests/imgs/git_white.png';
         
     }else{
         mapImg.src = './assets/imgs/map.png';
-        githubImg.src = './assets/imgs/github_.png';
+        githubImg.src = './assets/imgs/github.png';
         linkedImg.src = './assets/imgs/linkedin.png';
         gitImg.src = './assets/imgs/git_white.png';
     }
@@ -61,15 +61,4 @@ function Switchpage (page_id){
 
 
 //Send Email function
-Email.send({
-    Host : "smtp.yourisp.com",
-    Username : "dangelo.watson1212@gmail.com",
-    Password : "Jaida137#!",
-    To : 'dangelo.watson1212@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form Enquiry",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
 

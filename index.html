@@ -33,7 +33,7 @@
             <div class="contact-container-1" id="contact-container-1">
                 <div class="contact-button-bg-1" id="contact-button-bg-1">
                     <div class="contact-box-1" id="contact-box-1">
-                        <span id="text">Contact</span>
+                        <span class="tab" id="text">Contact</span>
                     </div>
                 </div>
             </div>
@@ -42,186 +42,383 @@
         
 
         <!--MAIN / GRID SECTION-->
-        <div class="grid-container">
-            
-            <div class="grid-layout">
-                <div class="section1 ">
-                <div class="about-me">
-                    <div class="avatar-container">
-                        <img src="./assets/imgs/avatar.png" alt="Apple Avatar" class="avatar">
-                        
-                    </div>
-
-                    <h2>
-                        Hello! My Name is...
-                    </h2>
-
-                    <h1><i>D'ANGELO WATSON</i></h1>
-
-                    <p>
-                        Hi! I’m a Full Stack Developer who specializes in <span class="gradient"><em>the MERN stack & Python</em></span> as well.
-                        I started as a self taught developer but have shifted to studying
-                         my <span class="gradient"><em>Bachelors of Science in Full Stack Development</em> </span>at Arizona State University.
-                        If you're in need of a passionate & dedicated Jr. developer? Let’s get in touch!
-                    </p>
-
-                    <div class="about-me_buttons">
-                        <div class="contact-container">
-                            <div class="contact-button-bg" id="contact-button-bg">
-                                <div class="contact-box about" id="contact-box">
-                                    <span id="text">Contact</span>
-                                </div>
+        <main>
+            <div class="pages">
+                <div class="page active"  data-page="1">
+                    <div class="grid-layout">
+                        <div class="section1 ">
+                        <div class="about-me-section">
+                            <div class="avatar-container">
+                                <img src="./assets/imgs/avatar.png" alt="Apple Avatar" class="avatar">                
                             </div>
-                        </div>
-
-                        <div class="contact-container">
-                            <div class="contact-button-bg" id="contact-button-bg">
-                                <div class="contact-box" id="contact-box">
-                                    <span  id="text">Resume</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                </div>
-
-                <div class="section2 map" >
-                    <img class="img" id='map-img' src="./assets/imgs/map_dark.png" alt="apple map w/ avatar emoji">
-                </div>
-
-                <div class="section3">
-                    <img class= "img" src="./assets/imgs/github_white.png" alt="">
-                </div>
-
-                <div class="section4" id="section4">
-                    <h2>Languages</h2>
-                            
-                    <div class="skills_languages_section">  
-                        <div class="skills" id="skills">
-                            <img class="logos" id="logos" src="./assets/imgs/js_logo.png" alt="" width="35" height="35">
-                            <p>Javascript</p>
-                        </div>
-
-                        <div class="skills" id="skills">
-                            <img class="logos" id="logos" src="./assets/imgs/python.svg" alt="" width="35" height="35">
-                            <p>Python</p>
-                        </div>
-
-                            
-                        <div class="skills" id="skills">
-                            <img class="logos"skills id="logos" src="./assets/imgs/native_react.png" alt="" width="35" height="35">
-                            <p>React.JS</p>
-                        </div>
-
-
-                        <div class="skills" id="skills">
-                            <div>
-                                <img class="logos" id="logos" src="./assets/imgs/html_logo.png" alt="" width="35" height="35">
-                                <img class="logos" id="logos" src="./assets/imgs/css_logo.png" alt="" width="35" height="35">       
-                            </div>
-
-                            <div class="skills" id="skills">
-                                <p>HTML & CSS</p>
-                            </div>
-                        </div>
-
-                        <div class="skills"  id="last-child">
-                            <img class="logos" id="logos" id="git-img" src="./assets/imgs/git_white.png" alt="" width="35" height="35">
-                            <p>Git</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section5" id="">
-                    <h2>Education</h2>
         
-                    <div class="learning-blocks-container">  
-                        <div class="learning-blocks" id="learning-blocks">
-                            <div class="logos" id=""> 
-                                <img class="logos" src="./assets/imgs/html_logo.png" alt="" width="35" height="35">
-                                <img class="logos" src="./assets/imgs/css_logo.png" alt="" width="35" height="35">
+                            <h2>
+                                Hello! My Name is...
+                            </h2>
+        
+                            <h1><i>D'ANGELO WATSON</i></h1>
+        
+                            <p>
+                                Hi! I’m a Full Stack Developer who specializes in <span class="gradient"><em>the MERN stack & Python</em></span> as well.
+                                I started as a self taught developer but have shifted to studying
+                                 my <span class="gradient"><em>Bachelors of Science in Full Stack Development</em> </span>at Arizona State University.
+                                If you're in need of a passionate & dedicated Jr. developer? Let’s get in touch!
+                            </p>
+        
+                            <div class="about-me_buttons">
+                                <div class="contact-container">
+                                    <div class="contact-button-bg" id="contact-button-bg">
+                                        <div class="contact-box about" id="contact-box">
+                                            <span id="text">Contact</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="contact-container">
+                                    <div class="contact-button-bg" id="contact-button-bg">
+                                        <div class="contact-box" id="contact-box">
+                                            <span  id="text">Resume</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="learning-text">
-                                <p class="html-css-text">Build Responsive Websites with HTML and CSS</p>
+        
+        
+                        </div>
+                        </div>
+    
+                        <div class="section2 map" >
+                            <img class="img" id='map-img' src="./assets/imgs/map_dark.png" alt="apple map w/ avatar emoji">
+                        </div>
+    
+                        <div class="section3">
+                            <img class= "img" id='github-img' src="./assets/imgs/github_white.png" alt="">
+                        </div>
+    
+                        <div class="section4" id="section4">
+                            <h2>Languages</h2>
+                                    
+                            <div class="skills_languages_section">  
+                                <div class="skills" id="skills">
+                                    <img class="logos" id="logos" src="./assets/imgs/js_logo.png" alt="" width="35" height="35">
+                                    <p>Javascript</p>
+                                </div>
+        
+                                <div class="skills" id="skills">
+                                    <img class="logos" id="logos" src="./assets/imgs/python.svg" alt="" width="35" height="35">
+                                    <p>Python</p>
+                                </div>
+        
+                                    
+                                <div class="skills" id="skills">
+                                    <img class="logos"skills id="logos" src="./assets/imgs/native_react.png" alt="" width="35" height="35">
+                                    <p>React.JS</p>
+                                </div>
+        
+        
+                                <div class="skills" id="skills">
+                                    <div>
+                                        <img class="logos" id="logos" src="./assets/imgs/html_logo.png" alt="" width="35" height="35">
+                                        <img class="logos" id="logos" src="./assets/imgs/css_logo.png" alt="" width="35" height="35">       
+                                    </div>
+        
+                                        <p>HTML & CSS</p>
+                                </div>
+        
+                                <div class="skills"  id="skills">
+                                    <img class="logos" id="logos" id="git-img" src="./assets/imgs/git_white.png" alt="" width="35" height="35">
+                                    <p>Git</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
-
-
-                        <div class="learning-blocks" id="learning-blocks">
-                            <div class="logos">
-                                <img class="logos" src="./assets/imgs/js_logo.png" alt="" width="35" height="35">
+    
+                        <div class="section5" id="section5">
+                            <h2>Education</h2>
+                
+                            <div class="learning-blocks-container">  
+                                <div class="learning-blocks" id="learning-blocks">
+                                    <div class="logos" id=""> 
+                                        <img class="logos" src="./assets/imgs/html_logo.png" alt="" width="35" height="35">
+                                        <img class="logos" src="./assets/imgs/css_logo.png" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p class="html-css-text">Build Responsive Websites with HTML and CSS</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed" id="completed">
+                                    COMPLETED
+                                </div> 
+        
+        
+                                <div class="learning-blocks" id="learning-blocks">
+                                    <div class="logos">
+                                        <img class="logos" src="./assets/imgs/js_logo.png" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p>Fundamentals of Javascript</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed" id="completed">
+                                    COMPLETED
+                                </div> 
+        
+                                <div class="learning-blocks" id="learning-blocks">
+                                    <div class="logos">
+                                        <img class="logos" src="./assets/imgs/the_odin_project.png" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p>The Odin Project</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed" id="completed">
+                                    COMPLETED
+                                </div> 
+        
+        
+                                <div class="learning-blocks" id="learning-blocks">
+                                    <div class="logos">
+                                        <img src="./assets/imgs/native_react.png" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p class="react-text">React  fundamentals</p>
+                                    </div>
+                                </div>
                             </div>
+                        
+                        </div>
+    
+                        <div class="section6 ">
+                            <img class ="img"  src="./assets/imgs/ecommerce_site.png" alt="">
+                        </div>
+        
+                        <div class="section7">
+                            <img class ="img" id="tasty-img"  src="./assets/imgs/linkedin.png" alt="">
+                        </div>
+        
+                        <div class="section8">
+                            <img class ="img" id="admin-img" src="./assets/imgs/admin_dark.png" alt="">
+                        </div>
+    
+                        <div class="section9">
+                            <img class ="img" id="tasty-img"  src="./assets/imgs/tasty.png" alt="">
+            
+                        </div>
+        
+                        <div class="section10 ">
+                            <img class ="img" id="tasty-img"  src="./assets/imgs/crypto.jpg" alt="">
+                        </div>
+        
+                        <div class="section11">
+                            <img class ="img" id="tasty-img"  src="./assets/imgs/music-player.png" alt="">
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="learning-text">
-                                <p>Fundamentals of Javascript</p>
-                            </div>
+                <div class="page"  data-page="2">
+                    <div class="grid-layout-projects">
+
+                        <div class="projects sneakers ">
+                            <img class ="img" id="crypto-img"  src="./assets/imgs/ecommerce_site.png" alt="">
                         </div>
 
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
-
-                        <div class="learning-blocks" id="learning-blocks">
-                            <div class="logos">
-                                <img class="logos" src="./assets/imgs/the_odin_project.png" alt="" width="35" height="35">
-                            </div>
-
-                            <div class="learning-text">
-                                <p>The Odin Project</p>
-                            </div>
+                        
+                        <div class="projects tasty">
+                            <img class ="img" id="crypto-img"  src="./assets/imgs/tasty.png" alt="">        
                         </div>
 
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
+                        <div class="projects admin">
+                            <img class ="img" id="crypto-img"  src="./assets/imgs/admin_dark.png" alt="">
+                            
+                        </div>
 
+                        <div class=" projects musicPlayer">
+                            <img class ="img" id="crypto-img"  src="./assets/imgs/music-player.png" alt="">
+                        </div>
 
-                        <div class="learning-blocks" id="learning-blocks">
-                            <div class="logos">
-                                <img src="./assets/imgs/native_react.png" alt="" width="35" height="35">
+                        <div class="projects crypto">
+                            <img class ="img" id="crypto-img"  src="./assets/imgs/crypto.jpg" alt="">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="page" data-page="3">   
+                    <div class="resume-layout">
+
+                        <div class="word-img">
+                            <a href="">
+                                <img src="./assets/imgs/word.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="resume-header">
+                            <h1 class="gradient">D'Angelo Watson</h2>
+
+                            <p> Phone: #252-725-1835 | Email: dangelo.watson252@outlook.com | Github | LinkedIn </p>
+
+                            <p class="intro"> 
+                                Hi! I’m a Full Stack Developer who specializes in <em>the MERN stack & Python</em> as well.
+                                I started as a self taught developer but have shifted my focus to
+                                 my <em>Bachelors of Science in Full Stack Development</em>at Arizona State University.
+                                If you're in need of a passionate & dedicated Jr. developer? Let’s get in touch!
+                            </p>
+                        </div>
+
+                        <div class="resume-body">
+                            <div class="technical-skills-section">
+                                <h3 class="gradient">Technical Skills</h3>
+
+                                <p>
+                                    Programming Languages: Javascript, Python, and React.Js <br><br>
+                                    Coding Languages: HTML, CSS, SCSS, & Tailwind <br><br>
+                                    DevOp Technologies: Git, Github, and API's <br><br>
+                                    Other: Bootstrap, Firebase, Visua l Studio, and Netlify
+                                </p>
                             </div>
 
-                            <div class="learning-text">
-                                <p class="react-text">React  fundamentals</p>
+                            <div class="software-projects-section">
+                                <h3 class="gradient">Software Projects</h3>
+
+                                <div class="flex">
+                                    <div class="left">
+                                        <i><h4> Apple Styled Portfolio 1.0</h4></i>
+
+                                        <p class="bullet-points">
+                                            &nbsp; &nbsp; &nbsp; - Portfolio website built using HTML, CSS, and JavaScript <br><br>
+                                            &nbsp; &nbsp; &nbsp; - Grid layout with multiple JavaScript features<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Page/data switcher, tilted card effect, dark/light mode, and a gradient hover effect<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Has links to my other projects w/ source code included<br><br>
+                                        </p>
+       
+                                    </div>
+
+                                    <div class="right">
+                                        <i><h4> Crypto Currency Tracker</h4></i>
+
+                                        <p class="bullet-points">
+                                            &nbsp; &nbsp; &nbsp; - API Project built using React.Js, SCSS, and Javascript<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Implemented data from coinGeicko's API and used hooks & Axios<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Worked with state management & intermediate react methods<br><br>
+                                        </p>
+                                    </div>
+                                </div>  
+
+                                <div class="flex">
+                                    <div class="left">
+                                        <i><h4> E-Commerce Sneaker Website</h4></i>
+
+                                        <p class="bullet-points">
+                                            &nbsp; &nbsp; &nbsp; - Interactive E-commerce site built using HTML, CSS, and JavaScript <br><br>
+                                            &nbsp; &nbsp; &nbsp; - Includes a payment form, Js slider animations, & a preview section<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Fully responsive for laptop & mobile<br><br>
+                                        </p>                        
+                                    </div>
+
+                                    <div class="right">
+                                        <i><h4> UI/UX Admin Dashboard Page</h4></i>
+
+                                        <p class="bullet-points">
+                                            &nbsp; &nbsp; &nbsp; - Admin page design built using HTML, CSS, and JavaScript <br><br>
+                                            &nbsp; &nbsp; &nbsp; - Features dark/light mode, UI materias, Js Sidebar for mobile/tablets<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Grid-layout, 100% responsive<br><br>
+                                        </p>  
+                                    </div>
+                                </div>  
+
+                                <div class="flex">
+                                    <div class="left">
+                                        <i><h4> Music Player Application</h4></i>
+
+                                        <p class="bullet-points">
+                                            &nbsp; &nbsp; &nbsp; - Music App built using HTML, CSS, and JavaScript<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Implemented different audio tracks<br><br>
+                                            &nbsp; &nbsp; &nbsp; - Enhanced animations for a better user experience<br><br>
+                                        </p>          
+                                        
+                                    </div>
+
+                                    <div class="right">
+                                    </div>
+                                </div>   
+                            </div>  
+                            
+                            <div class="experience-section">
+                                <h3 class="gradient">Experience</h3>
+
+                                <div class="title">
+                                    <i><h4>ASU University – B.S. Full Stack Development </h4></i>
+
+                                    <i><h4>(November 2022 – Present) </h4></i>
+                                </div>
+
+                                <p class="bullet-points">
+                                        &nbsp; &nbsp; &nbsp; - Studying Python & the Programming logic in “Info Tech Programming Logic” 
+                                </p>
+
+                                <div class="title">
+                                    <i><h4>The Odin Project</h4></i>
+
+                                    <i><h4>(May 2022 – November 2022) </h4></i>
+                                </div>
+
+                                <p class="bullet-points">
+                                    &nbsp; &nbsp; &nbsp;-Advanced HTML CSS and responsive design (Bootstrap) <br><br>
+
+                                    &nbsp; &nbsp; &nbsp;-Advanced JavaScript techniques (ES6) <br><br>
+                                    
+                                    &nbsp; &nbsp; &nbsp;-API’s, learned how to integrate a live API to my applications <br><br>
+                                    
+                                    &nbsp; &nbsp; &nbsp;-Learned how to use Git and GitHub to manage my code for streamlined development workflow <br><br>
+                                </p>
+
+                                <div class="title">
+                                    <i><h4>Self-Taught</h4></i>
+
+                                    <i><h4>(December 2021 – May 2022) </h4></i>
+                                </div>
+
+                                <p class="bullet-points">
+                                        &nbsp; &nbsp; &nbsp; - Studying Python & the Programming logic in “Info Tech Programming Logic” 
+                                </p>
+                            </div>
+
+                            <div class="development-section">
+                                <h3 class="gradient">Professional Development & Certification </h3>
+
+                                <p class="bullet-points">
+                                     The Odin Project (Full Stack JavaScript) – Front & Backend Development <br><br>
+
+                                     The Odin Project (Foundations) - Fundamentals (HTML, CSS, & JavaScript)  <br><br>
+                                        
+                                     Coursers – Introduction to React  <br><br>
+                                </p>
                             </div>
                         </div>
                     </div>
-                
-                </div>
 
-                <div class="section6 ">
-                    <img class ="img"  src="./assets/imgs/ecommerce_site.png" alt="">
-                </div>
 
-                <div class="section7">
-                    <img class ="img" id="tasty-img"  src="./assets/imgs/music-player.png" alt="">
-                </div>
 
-                <div class="section8">
-                    <img class ="img" id="admin-img" src="./assets/imgs/admin_dark.png" alt="">
-                </div>
 
-                <div class="section9">
-                    <img class ="img" id="tasty-img"  src="./assets/imgs/tasty.png" alt="">
-    
-                </div>
+                    </div>               
+                </div>  
 
-                <div class="section10 ">
-                    <img class ="img" id="tasty-img"  src="./assets/imgs/music.png" alt="">
-                </div>
 
-                <div class="section11">
-                    <img class ="img" id="tasty-img"  src="./assets/imgs/music.png" alt="">
+                <div class="page" data-page="4">  
+
+
+                    <div class="contact-page">
+                        Contact page
+                    </div>           
                 </div>
             </div>
-        </div>
+        </main>
+
 
         
         <script src="./css/main.js" async defer></script>
