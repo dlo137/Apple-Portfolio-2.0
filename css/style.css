@@ -33,19 +33,26 @@ body{
 .light nav .active{
     color: black;
 }
+
 .light .grid-layout > div {
     background:rgb(240, 240, 240);
     color: rgb(34, 34, 34);
 }
 
+
 .light .contact-box{
     background: whitesmoke;
-    color: rgb(34, 34, 34);
+    color: rgb(0, 0, 0);
 }
+
 
 .light .contact-box-1{
     background: whitesmoke;
-    color: rgb(34, 34, 34);
+    color: rgb(0, 0, 0);
+}
+
+.light a{
+    color: rgb(138, 138, 138);
 }
 
 
@@ -54,6 +61,29 @@ body{
     border-radius: 30px;
     padding: 0.2rem 1rem;
 }
+
+.light .resume-layout{
+    background:rgb(240, 240, 240);
+    color: rgb(34, 34, 34);
+}
+
+.light p{
+    background:rgb(240, 240, 240);
+    color: rgb(34, 34, 34);
+}
+
+.light form{
+    background:rgb(240, 240, 240);
+    color: rgb(34, 34, 34);
+    border-radius: 40px;
+    padding: 3rem 4rem;
+    margin-top: 3rem;
+}
+
+.light input{
+    color: black;
+}
+
 
 /* pages */
 .pages  .page{
@@ -471,7 +501,11 @@ body{
     }
 
     body{
-        width: 69%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 9rem 4rem 9rem;
+        margin-bottom: 25rem;
     }
     .avatar-container{
         display: flex;
@@ -536,18 +570,19 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
         height: auto;
-
     }
+    
     .tab.active > a[data-switcher]{
         background: white;
         border-radius: 30px;
         padding: 0.2rem 1rem;
-            background: rgb(34, 34, 34);
+        background: rgb(34, 34, 34);
         color: white;
     }
     
-    nav{
+    #nav{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1049,16 +1084,11 @@ body{
 
     }
 
-    .resume-layout{
-
-    }
-    
 
     body{
         width: 160%;
     }
-
-    
+  
 
     .avatar-container{
         display: flex;
@@ -1261,8 +1291,6 @@ body{
         font-size: 26px;
     }
 
-  
-
     .learning-blocks-container{
         margin-top: 2rem;
     }
@@ -1276,6 +1304,16 @@ body{
 
     #completed{
         font-size: 20px;
+    }
+
+    .sent{
+        display: block;
+        margin-top: 50rem;
+    }
+    
+    .verified-header{
+        color: lightgray;
+        text-align: center;
     }
     
 }
@@ -1292,6 +1330,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .tab > a[data-switcher]{
@@ -1476,7 +1515,7 @@ li{
     margin-top: 1rem;
 }
 
-/* second page*/
+/* third page*/
 
 .word-img{
     display: flex;
@@ -1583,4 +1622,160 @@ h4 {
     margin-top: 1rem;
 }
 
+/* 4th page - Contact*/
 
+
+.contact-wrapper{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.contact-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 67%;
+    border-radius: 40px;
+    background-color: black;
+    color: lightgray;
+
+}
+
+.contact-page h1{
+    margin-bottom: 2rem;
+}
+
+label{
+    padding: 0.5rem;
+}
+
+form{
+    width: 90%;
+    min-width: auto;
+    padding: 6rem;
+}
+
+.input-group{
+    margin-bottom: 30px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 40px;
+    color: lightgray;
+    background: transparent;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 30px;
+    border: 1px solid lightgray;;
+    width: 7rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+/*Hover Effect on Projects*/
+
+
+
+.web-github-options{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+    left: 47%;
+    top: 47%;
+}
+
+.web-github-options1{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+    left: 86%;
+    top: 47%;
+}
+
+.web-github-options2{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+    left: 86%;
+    top: 85%;
+}
+
+.web-github-options3{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+    left: 9%;
+    top: 47%;
+}
+
+.web-github-options4{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+    left: 9%;
+    top: 85%;
+}
+
+.sent{
+    display: block;
+    margin-top: 18rem;
+}
+
+.verified-header{
+    color: lightgray;
+    text-align: center;
+}
+
+#contact-button-bg-2{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ff7857, #ffcc72);
+    padding: .3rem;
+    border-radius: 30px;
+    width: 14rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#contact-box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(34, 34, 34);
+    color: white;   
+    border-radius: 30px;
+    width: 14rem;
+    height: 2rem;
+}
+
+.contact-container-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}

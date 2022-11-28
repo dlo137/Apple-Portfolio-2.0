@@ -18,15 +18,15 @@ switchElement.addEventListener('click', () =>{
     //toggles imgs 
     toggle = !toggle;
     if(toggle){
-        mapImg.src = './assests/imgs/map_light.png';
-        githubImg.src = './assests/imgs/github_white.png';
+        mapImg.src = './assets/imgs/map_dark.png';
+        githubImg.src = './assets/imgs/github_white.png';
         linkedImg.src = './assets/imgs/linkedin.png';
-        gitImg.src = './assests/imgs/git_white.png';
+        gitImg.src = './assets/imgs/git_white.png';
         
     }else{
         mapImg.src = './assets/imgs/map.png';
         githubImg.src = './assets/imgs/github.png';
-        linkedImg.src = './assets/imgs/linkedin.png';
+        linkedImg.src = './assets/imgs/linkedin_white.png';
         gitImg.src = './assets/imgs/git_white.png';
     }
 })

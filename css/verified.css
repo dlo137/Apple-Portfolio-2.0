@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 9rem 4rem 9rem;
+    background-color: rgb(20, 20, 20);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    border-radius: 30px;
+    padding: 0.2rem 1rem;  
+}
+
+/*Header - light and Light Button*/
+
+.switch{
+    width: 80px;
+    height: 40px;
+    background: rgb(226, 226, 226);
+    border-radius: 30px;
+    position: relative;
+}
+
+.flicker{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+
+.moon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+/*Header - Contact Button!*/
+
+.contact-button-bg{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ff7857, #ffcc72);
+    padding: .3rem;
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(34, 34, 34);
+    color: white;    
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+} 
+
+.contact-box:hover{
+    background: rgb(65, 65, 65);
+    color: white;
+    transition: 0.3s;
+
+}
+
+
+.contact-button-bg-1{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ff7857, #ffcc72);
+    padding: .3rem;
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+.contact-box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: rgb(34, 34, 34);
+    color: white;    
+    border-radius: 30px;
+    width: 7rem;
+    height: 2.2rem;
+} 
+
+.light nav{
+    color: rgb(0, 0, 0);
+    background: rgb(240, 240, 240);
+}
+
+.light nav .active{
+    color: black;
+}
+
+.light header nav .tabs .tab.active a[data-switcher]{
+    background: rgb(207, 207, 207);
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+    width: 20rem;
+    color: white;
+    background: rgb(0, 0, 0);
+    padding: 0.3rem ;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab > a[data-switcher]{
+    cursor: pointer;
+}
+
+.tab.active > a[data-switcher]{
+    background: white;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+        background: rgb(34, 34, 34);
+    color: white;
+}
